@@ -1,0 +1,12 @@
+train: /home/snf/annotation/normalization/yolo_data/data_512x512/content/images/train                    
+val: /home/snf/annotation/normalization/yolo_data/data_512x512/content/images/valid
+
+nc: 4
+
+names: ['pos_tumor', 'neg_tumor', 'pos_immune', 'others']
+
+-e train: /home/snf/annotation/normalization/yolo_data/data_512x512/content/images/train
+val: /home/snf/annotation/normalization/yolo_data/data_512x512/content/images/valid
+
+nc: 4
+names: ['pos_tumor', 'neg_tumor', 'pos_immune', 'others']
