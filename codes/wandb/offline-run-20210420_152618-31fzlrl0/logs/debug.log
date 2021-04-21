@@ -1,0 +1,49 @@
+2021-04-20 15:26:18,145 INFO    MainThread:39560 [wandb_setup.py:_flush():70] setting env: {}
+2021-04-20 15:26:18,145 INFO    MainThread:39560 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-04-20 15:26:18,145 INFO    MainThread:39560 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-04-20 15:26:18,145 INFO    MainThread:39560 [wandb_setup.py:_flush():70] setting login settings: {'mode': 'offline'}
+2021-04-20 15:26:18,145 INFO    MainThread:39560 [wandb_init.py:_log_setup():319] Logging user logs to /home/snf/yolo/yolov5/codes/wandb/offline-run-20210420_152618-31fzlrl0/logs/debug.log
+2021-04-20 15:26:18,146 INFO    MainThread:39560 [wandb_init.py:_log_setup():320] Logging internal logs to /home/snf/yolo/yolov5/codes/wandb/offline-run-20210420_152618-31fzlrl0/logs/debug-internal.log
+2021-04-20 15:26:18,146 INFO    MainThread:39560 [wandb_init.py:init():351] calling init triggers
+2021-04-20 15:26:18,146 INFO    MainThread:39560 [wandb_init.py:init():358] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov5s.pt', 'cfg': './yolov5/models/yolov5s.yaml', 'data': 'data.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0}, 'epochs': 500, 'batch_size': 32, 'img_size': [640, 640], 'rect': False, 'resume': False, 'nosave': False, 'notest': False, 'noautoanchor': False, 'evolve': False, 'bucket': '', 'cache_images': False, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'local_rank': -1, 'log_imgs': 16, 'log_artifacts': False, 'workers': 8, 'project': 'runs/train', 'name': 'TEST', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'world_size': 1, 'global_rank': -1, 'save_dir': 'runs/train/TEST3', 'total_batch_size': 32}
+2021-04-20 15:26:18,146 INFO    MainThread:39560 [wandb_init.py:init():404] starting backend
+2021-04-20 15:26:18,197 INFO    MainThread:39560 [backend.py:ensure_launched():81] starting backend process...
+2021-04-20 15:26:18,242 INFO    MainThread:39560 [backend.py:ensure_launched():86] started backend process with pid: 39732
+2021-04-20 15:26:18,244 INFO    MainThread:39560 [wandb_init.py:init():413] backend started and connected
+2021-04-20 15:26:18,247 INFO    MainThread:39560 [wandb_init.py:init():436] updated telemetry
+2021-04-20 15:26:18,250 INFO    MainThread:39560 [wandb_init.py:init():495] starting run threads in backend
+2021-04-20 15:26:19,992 INFO    MainThread:39560 [wandb_run.py:_console_start():1411] atexit reg
+2021-04-20 15:26:19,992 INFO    MainThread:39560 [wandb_run.py:_redirect():1274] redirect: SettingsConsole.REDIRECT
+2021-04-20 15:26:19,993 INFO    MainThread:39560 [wandb_run.py:_redirect():1279] Redirecting console.
+2021-04-20 15:26:19,993 INFO    MainThread:39560 [redirect.py:install():213] install start
+2021-04-20 15:26:19,994 INFO    MainThread:39560 [redirect.py:install():228] install stop
+2021-04-20 15:26:19,994 INFO    MainThread:39560 [redirect.py:install():213] install start
+2021-04-20 15:26:19,994 INFO    MainThread:39560 [redirect.py:install():228] install stop
+2021-04-20 15:26:19,994 INFO    MainThread:39560 [wandb_run.py:_redirect():1325] Redirects installed.
+2021-04-20 15:26:19,994 INFO    MainThread:39560 [wandb_init.py:init():518] run started, returning control to user process
+2021-04-20 15:26:40,671 INFO    MainThread:39560 [wandb_run.py:_atexit_cleanup():1381] got exitcode: 1
+2021-04-20 15:26:40,675 INFO    MainThread:39560 [wandb_run.py:_restore():1353] restore
+2021-04-20 15:26:40,675 INFO    MainThread:39560 [redirect.py:uninstall():232] uninstall start
+2021-04-20 15:26:40,676 INFO    MainThread:39560 [redirect.py:_stop():287] _stop: stdout
+2021-04-20 15:26:40,676 INFO    MainThread:39560 [redirect.py:_stop():293] _stop closed: stdout
+2021-04-20 15:26:40,677 INFO    stdout    :39560 [redirect.py:_pipe_relay():129] relay done saw last write: stdout
+2021-04-20 15:26:40,677 INFO    stdout    :39560 [redirect.py:_pipe_relay():145] relay done done: stdout
+2021-04-20 15:26:40,677 INFO    MainThread:39560 [redirect.py:_stop():299] _stop joined: stdout
+2021-04-20 15:26:40,677 INFO    MainThread:39560 [redirect.py:_stop():301] _stop rd closed: stdout
+2021-04-20 15:26:40,677 INFO    MainThread:39560 [redirect.py:uninstall():236] uninstall done
+2021-04-20 15:26:40,677 INFO    MainThread:39560 [redirect.py:uninstall():232] uninstall start
+2021-04-20 15:26:40,677 INFO    MainThread:39560 [redirect.py:_stop():287] _stop: stderr
+2021-04-20 15:26:40,677 INFO    MainThread:39560 [redirect.py:_stop():293] _stop closed: stderr
+2021-04-20 15:26:40,677 INFO    stderr    :39560 [redirect.py:_pipe_relay():129] relay done saw last write: stderr
+2021-04-20 15:26:40,678 INFO    stderr    :39560 [redirect.py:_pipe_relay():145] relay done done: stderr
+2021-04-20 15:26:40,678 INFO    MainThread:39560 [redirect.py:_stop():299] _stop joined: stderr
+2021-04-20 15:26:40,678 INFO    MainThread:39560 [redirect.py:_stop():301] _stop rd closed: stderr
+2021-04-20 15:26:40,678 INFO    MainThread:39560 [redirect.py:uninstall():236] uninstall done
+2021-04-20 15:26:40,684 INFO    MainThread:39560 [wandb_run.py:_wait_for_finish():1504] got exit ret: 
+2021-04-20 15:26:42,688 INFO    MainThread:39560 [wandb_run.py:_wait_for_finish():1504] got exit ret: done: true
+exit_result {
+}
+
+2021-04-20 15:26:43,955 INFO    MainThread:39560 [wandb_run.py:_show_summary():1659] rendering summary
+2021-04-20 15:26:43,955 INFO    MainThread:39560 [wandb_run.py:_show_history():1697] rendering history

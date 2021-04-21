@@ -1,0 +1,80 @@
+2021-04-20 15:25:20,657 INFO    MainThread:39257 [internal.py:wandb_internal():91] W&B internal server running at pid: 39257, started at: 2021-04-20 15:25:20.656943
+2021-04-20 15:25:20,660 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: run_start
+2021-04-20 15:25:20,661 INFO    WriterThread:39257 [datastore.py:open_for_write():77] open: /home/snf/yolo/yolov5/codes/wandb/offline-run-20210420_152519-36ezt0eo/run-36ezt0eo.wandb
+2021-04-20 15:25:21,538 DEBUG   HandlerThread:39257 [meta.py:__init__():34] meta init
+2021-04-20 15:25:21,538 DEBUG   HandlerThread:39257 [meta.py:__init__():48] meta init done
+2021-04-20 15:25:21,538 DEBUG   HandlerThread:39257 [meta.py:probe():190] probe
+2021-04-20 15:25:21,544 DEBUG   HandlerThread:39257 [git.py:repo():33] git repository is invalid
+2021-04-20 15:25:21,544 DEBUG   HandlerThread:39257 [meta.py:_save_pip():52] save pip
+2021-04-20 15:25:21,545 DEBUG   HandlerThread:39257 [meta.py:_save_pip():66] save pip done
+2021-04-20 15:25:21,545 DEBUG   HandlerThread:39257 [meta.py:probe():231] probe done
+2021-04-20 15:25:35,993 DEBUG   SenderThread:39257 [sender.py:send():117] send: exit
+2021-04-20 15:25:35,994 INFO    SenderThread:39257 [sender.py:send_exit():195] handling exit code: 1
+2021-04-20 15:25:35,995 INFO    SenderThread:39257 [sender.py:send_exit():203] send defer
+2021-04-20 15:25:35,996 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: poll_exit
+2021-04-20 15:25:35,996 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: defer
+2021-04-20 15:25:35,996 DEBUG   SenderThread:39257 [sender.py:send():117] send: request
+2021-04-20 15:25:35,997 INFO    HandlerThread:39257 [handler.py:handle_request_defer():108] handle defer: 0
+2021-04-20 15:25:35,997 DEBUG   SenderThread:39257 [sender.py:send_request():126] send_request: poll_exit
+2021-04-20 15:25:35,997 DEBUG   SenderThread:39257 [sender.py:send():117] send: request
+2021-04-20 15:25:35,997 DEBUG   SenderThread:39257 [sender.py:send_request():126] send_request: defer
+2021-04-20 15:25:35,997 INFO    SenderThread:39257 [sender.py:send_request_defer():212] handle sender defer: 0
+2021-04-20 15:25:35,997 INFO    SenderThread:39257 [sender.py:send_request_defer():248] send defer: 1
+2021-04-20 15:25:35,998 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: defer
+2021-04-20 15:25:35,998 INFO    HandlerThread:39257 [handler.py:handle_request_defer():108] handle defer: 1
+2021-04-20 15:25:36,230 DEBUG   SenderThread:39257 [sender.py:send():117] send: request
+2021-04-20 15:25:36,230 DEBUG   SenderThread:39257 [sender.py:send_request():126] send_request: defer
+2021-04-20 15:25:36,230 INFO    SenderThread:39257 [sender.py:send_request_defer():212] handle sender defer: 1
+2021-04-20 15:25:36,230 INFO    SenderThread:39257 [sender.py:send_request_defer():248] send defer: 2
+2021-04-20 15:25:36,231 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: defer
+2021-04-20 15:25:36,231 INFO    HandlerThread:39257 [handler.py:handle_request_defer():108] handle defer: 2
+2021-04-20 15:25:36,232 DEBUG   SenderThread:39257 [sender.py:send():117] send: request
+2021-04-20 15:25:36,232 DEBUG   SenderThread:39257 [sender.py:send_request():126] send_request: defer
+2021-04-20 15:25:36,232 INFO    SenderThread:39257 [sender.py:send_request_defer():212] handle sender defer: 2
+2021-04-20 15:25:36,232 INFO    SenderThread:39257 [sender.py:send_request_defer():248] send defer: 3
+2021-04-20 15:25:36,232 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: defer
+2021-04-20 15:25:36,232 INFO    HandlerThread:39257 [handler.py:handle_request_defer():108] handle defer: 3
+2021-04-20 15:25:36,233 DEBUG   SenderThread:39257 [sender.py:send():117] send: request
+2021-04-20 15:25:36,233 DEBUG   SenderThread:39257 [sender.py:send_request():126] send_request: defer
+2021-04-20 15:25:36,233 INFO    SenderThread:39257 [sender.py:send_request_defer():212] handle sender defer: 3
+2021-04-20 15:25:36,233 INFO    SenderThread:39257 [sender.py:send_request_defer():248] send defer: 4
+2021-04-20 15:25:36,233 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: defer
+2021-04-20 15:25:36,234 INFO    HandlerThread:39257 [handler.py:handle_request_defer():108] handle defer: 4
+2021-04-20 15:25:36,234 DEBUG   SenderThread:39257 [sender.py:send():117] send: request
+2021-04-20 15:25:36,234 DEBUG   SenderThread:39257 [sender.py:send_request():126] send_request: defer
+2021-04-20 15:25:36,234 INFO    SenderThread:39257 [sender.py:send_request_defer():212] handle sender defer: 4
+2021-04-20 15:25:36,234 INFO    SenderThread:39257 [sender.py:send_request_defer():248] send defer: 5
+2021-04-20 15:25:36,235 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: defer
+2021-04-20 15:25:36,235 INFO    HandlerThread:39257 [handler.py:handle_request_defer():108] handle defer: 5
+2021-04-20 15:25:36,235 DEBUG   SenderThread:39257 [sender.py:send():117] send: request
+2021-04-20 15:25:36,235 DEBUG   SenderThread:39257 [sender.py:send_request():126] send_request: defer
+2021-04-20 15:25:36,235 INFO    SenderThread:39257 [sender.py:send_request_defer():212] handle sender defer: 5
+2021-04-20 15:25:36,235 INFO    SenderThread:39257 [sender.py:send_request_defer():248] send defer: 6
+2021-04-20 15:25:36,236 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: defer
+2021-04-20 15:25:36,236 INFO    HandlerThread:39257 [handler.py:handle_request_defer():108] handle defer: 6
+2021-04-20 15:25:36,236 DEBUG   SenderThread:39257 [sender.py:send():117] send: request
+2021-04-20 15:25:36,236 DEBUG   SenderThread:39257 [sender.py:send_request():126] send_request: defer
+2021-04-20 15:25:36,236 INFO    SenderThread:39257 [sender.py:send_request_defer():212] handle sender defer: 6
+2021-04-20 15:25:36,236 INFO    SenderThread:39257 [sender.py:send_request_defer():248] send defer: 7
+2021-04-20 15:25:36,237 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: defer
+2021-04-20 15:25:36,237 INFO    HandlerThread:39257 [handler.py:handle_request_defer():108] handle defer: 7
+2021-04-20 15:25:36,237 DEBUG   SenderThread:39257 [sender.py:send():117] send: request
+2021-04-20 15:25:36,237 DEBUG   SenderThread:39257 [sender.py:send_request():126] send_request: defer
+2021-04-20 15:25:36,237 INFO    SenderThread:39257 [sender.py:send_request_defer():212] handle sender defer: 7
+2021-04-20 15:25:36,237 INFO    SenderThread:39257 [sender.py:send_request_defer():248] send defer: 8
+2021-04-20 15:25:36,238 DEBUG   SenderThread:39257 [sender.py:send():117] send: final
+2021-04-20 15:25:36,238 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: defer
+2021-04-20 15:25:36,239 INFO    HandlerThread:39257 [handler.py:handle_request_defer():108] handle defer: 8
+2021-04-20 15:25:36,239 DEBUG   SenderThread:39257 [sender.py:send():117] send: request
+2021-04-20 15:25:36,239 DEBUG   SenderThread:39257 [sender.py:send_request():126] send_request: defer
+2021-04-20 15:25:36,239 INFO    SenderThread:39257 [sender.py:send_request_defer():212] handle sender defer: 8
+2021-04-20 15:25:38,001 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: poll_exit
+2021-04-20 15:25:38,001 DEBUG   SenderThread:39257 [sender.py:send():117] send: request
+2021-04-20 15:25:38,001 DEBUG   SenderThread:39257 [sender.py:send_request():126] send_request: poll_exit
+2021-04-20 15:25:38,003 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: get_summary
+2021-04-20 15:25:38,005 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: sampled_history
+2021-04-20 15:25:38,006 DEBUG   HandlerThread:39257 [handler.py:handle_request():94] handle_request: shutdown
+2021-04-20 15:25:38,006 INFO    HandlerThread:39257 [handler.py:finish():333] shutting down handler
+2021-04-20 15:25:38,239 INFO    WriterThread:39257 [datastore.py:close():258] close: /home/snf/yolo/yolov5/codes/wandb/offline-run-20210420_152519-36ezt0eo/run-36ezt0eo.wandb
+2021-04-20 15:25:39,001 INFO    SenderThread:39257 [sender.py:finish():766] shutting down sender
+2021-04-20 15:25:39,003 INFO    MainThread:39257 [internal.py:handle_exit():78] Internal process exited

@@ -1,0 +1,53 @@
+[34m[1mtrain: [0mScanning '/home/snf/annotation/normalization/yolo_data/data_512x512/content/labels/train.cache' for images and labels... 246 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 246/246 [00:00<?, ?it/s][34m[1mtrain: [0mScanning '/home/snf/annotation/normalization/yolo_data/data_512x512/content/labels/train.cache' for images and labels... 246 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 246/246 [00:00<00:00, 1296229.63it/s]
+[34m[1mval: [0mScanning '/home/snf/annotation/normalization/yolo_data/data_512x512/content/labels/valid.cache' for images and labels... 208 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 208/208 [00:00<?, ?it/s][34m[1mval: [0mScanning '/home/snf/annotation/normalization/yolo_data/data_512x512/content/labels/valid.cache' for images and labels... 208 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████| 208/208 [00:00<00:00, 976948.75it/s]
+Plotting labels... 
+
+[34m[1mautoanchor: [0mAnalyzing anchors... anchors/target = 5.74, Best Possible Recall (BPR) = 1.0000
+Image sizes 640 train, 640 test
+Using 8 dataloader workers
+Logging results to runs/train/TEST2
+Starting training for 500 epochs...
+
+     Epoch   gpu_mem       box       obj       cls     total   targets  img_size
+  0%|          | 0/8 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "yolov5/train.py", line 526, in <module>
+    train(hyp, opt, device, tb_writer, wandb)
+  File "yolov5/train.py", line 292, in train
+    pred = model(imgs)  # forward
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 161, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 171, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/nn/parallel/parallel_apply.py", line 86, in parallel_apply
+    output.reraise()
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/_utils.py", line 428, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in replica 2 on device 2.
+Original Traceback (most recent call last):
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/nn/parallel/parallel_apply.py", line 61, in _worker
+    output = module(*input, **kwargs)
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/snf/yolo/yolov5/codes/yolov5/models/yolo.py", line 118, in forward
+    return self.forward_once(x, profile)  # single-scale inference, train
+  File "/home/snf/yolo/yolov5/codes/yolov5/models/yolo.py", line 134, in forward_once
+    x = m(x)  # run
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/snf/yolo/yolov5/codes/yolov5/models/common.py", line 102, in forward
+    return self.cv2(torch.cat([x] + [m(x) for m in self.m], 1))
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/snf/yolo/yolov5/codes/yolov5/models/common.py", line 38, in forward
+    return self.act(self.bn(self.conv(x)))
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 423, in forward
+    return self._conv_forward(input, self.weight)
+  File "/home/snf/anaconda3/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 420, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: CUDA out of memory. Tried to allocate 4.32 GiB (GPU 2; 7.93 GiB total capacity; 922.89 MiB already allocated; 4.32 GiB free; 2.76 GiB reserved in total by PyTorch)
+
+Images sizes do not match. This will causes images to be display incorrectly in the UI.

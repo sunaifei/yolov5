@@ -1,0 +1,31 @@
+{
+    "os": "Linux-4.15.0-129-generic-x86_64-with-debian-stretch-sid",
+    "python": "3.7.4",
+    "heartbeatAt": "2021-04-20T07:20:05.510270",
+    "startedAt": "2021-04-20T07:20:03.730516",
+    "docker": null,
+    "gpu": "GeForce GTX 1080",
+    "gpu_count": 4,
+    "cpu_count": 72,
+    "cuda": "10.0.130",
+    "args": [
+        "--img",
+        "640",
+        "--batch",
+        "32",
+        "--epochs",
+        "500",
+        "--data",
+        "data.yaml",
+        "--cfg",
+        "models/yolov5s.yaml",
+        "--name",
+        "TEST"
+    ],
+    "state": "running",
+    "codePath": "yolov5/train.py",
+    "program": "yolov5/train.py",
+    "host": "aginome-xcq",
+    "username": "snf",
+    "executable": "/home/snf/anaconda3/bin/python"
+}
